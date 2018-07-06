@@ -10,6 +10,10 @@ namespace CheckPrime
     {
         static void Main(string[] args)
         {
+            Solution solution = new Solution();
+            bool result = solution.IsPrime(17);
+            Console.WriteLine(result);
+            Console.ReadKey();
         }
     }
 }
