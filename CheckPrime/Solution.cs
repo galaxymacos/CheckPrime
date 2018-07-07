@@ -14,17 +14,14 @@ namespace CheckPrime
                 {
                     if (num == i * j) 
                     {
-                        Console.WriteLine($"{num} = {i} * {j}");
                         return false;
                     }
                 }
                 
             }
-
-            Console.WriteLine($"{num} is not a prime number");
             return true;
         }
-        public bool IsPrimeMap(int num) // O(n)
+        public bool IsPrimeMap(int num) // O(sqrt(n))
         {
             for (int i = 2; i <= Math.Sqrt(num); i++)
             {
@@ -35,30 +32,5 @@ namespace CheckPrime
             }
             return true;
         }
-
-        public int CountPrimes(int n)
-        {
-            int count = 0;
-            List<int> primes = new List<int>();
-            for (int i = 2; i < n; i++)
-            {
-                bool isEven = false;
-                foreach (int prime in primes)
-                {
-                    if (i % prime == 0)
-                    {
-                        isEven = true;
-                        break;
-                    }
-                }
-                if (!isEven)
-                {
-                    primes.Add(i);
-                    count++;
-                }
-            }
-            return count;
-        }
-
     }
 }

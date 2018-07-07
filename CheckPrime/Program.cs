@@ -10,10 +10,32 @@ namespace CheckPrime
     {
         static void Main(string[] args)
         {
-            Solution solution = new Solution();
-            bool result = solution.IsPrime(17);
+            int userInput = GetUserInput();
+            var solution = new Solution();
+            var result = solution.IsPrimeMap(userInput);
             Console.WriteLine(result);
             Console.ReadKey();
+        }
+
+        private static int GetUserInput()
+        {
+            do
+            {
+                var userInput = Console.ReadLine();
+                try
+                {
+                    int num = Convert.ToInt32(userInput);
+                    return num;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Your input is not a number");
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Your number is too big to calculate");
+                }
+            } while (true);
         }
     }
 }
