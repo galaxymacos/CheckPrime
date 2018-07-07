@@ -10,10 +10,13 @@ namespace CheckPrime
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to using prime checker");
+            Console.Write("Enter a number: ");
             int userInput = GetUserInput();
             var solution = new Solution();
             var result = solution.IsPrimeMap(userInput);
-            Console.WriteLine(result);
+            Console.WriteLine($"{userInput} is "+(result?"":"not ")+"a prime number");
+            Console.WriteLine("Please any key to quit");
             Console.ReadKey();
         }
 
