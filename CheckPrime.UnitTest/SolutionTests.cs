@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Xml.Schema;
+using NumLibrary;
 using NUnit.Framework;
 
 namespace CheckPrime.UnitTest
@@ -7,12 +8,12 @@ namespace CheckPrime.UnitTest
     [TestFixture]
     public class SolutionTests
     {
-        private Solution _solution;
+        private IntExtension _solution;
 
         [SetUp]
         public void SetUp()
         {
-            _solution = new Solution();            
+            _solution = new IntExtension();            
         }
         
         [Test]

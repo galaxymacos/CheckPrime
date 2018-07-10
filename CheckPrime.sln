@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckPrime", "CheckPrime\Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckPrime.UnitTest", "CheckPrime.UnitTest\CheckPrime.UnitTest.csproj", "{0D25707D-A96C-4BB7-AEAA-9933E3E2628E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumLibrary", "NumLibrary\NumLibrary.csproj", "{1424C642-D892-449E-8E1E-1BB5B9AADC29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0D25707D-A96C-4BB7-AEAA-9933E3E2628E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D25707D-A96C-4BB7-AEAA-9933E3E2628E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D25707D-A96C-4BB7-AEAA-9933E3E2628E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1424C642-D892-449E-8E1E-1BB5B9AADC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1424C642-D892-449E-8E1E-1BB5B9AADC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1424C642-D892-449E-8E1E-1BB5B9AADC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1424C642-D892-449E-8E1E-1BB5B9AADC29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

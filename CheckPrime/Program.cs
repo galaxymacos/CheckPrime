@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NumLibrary;
 
 namespace CheckPrime
 {
@@ -14,7 +15,9 @@ namespace CheckPrime
             do
             {
                 int testNumber = GetUserInput();
-                CheckIfInputIsPrime(testNumber);
+                bool result = IsPrime(testNumber);
+                Console.WriteLine($"{testNumber} is " + (result ? "" : "not ") + "a prime number");
+
             } while (DoesUserWantToContinue());
             
             Console.WriteLine("Bye");
@@ -28,11 +31,10 @@ namespace CheckPrime
             return isContinued.Key == ConsoleKey.Y;
         }
 
-        private static void CheckIfInputIsPrime(int userInput)
+        private static bool IsPrime(int userInput)
         {
-            var solution = new Solution();
-            bool result = solution.IsPrimeMap(userInput);
-            Console.WriteLine($"{userInput} is " + (result ? "" : "not ") + "a prime number");
+            var solution = new IntExtension();
+            return solution.IsPrimeMap(userInput);
         }
 
         private static int GetUserInput()

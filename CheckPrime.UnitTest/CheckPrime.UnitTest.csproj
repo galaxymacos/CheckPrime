@@ -50,6 +50,10 @@
       <Project>{d385107f-2a01-4222-b131-4b87e1587a3f}</Project>
       <Name>CheckPrime</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NumLibrary\NumLibrary.csproj">
+      <Project>{1424c642-d892-449e-8e1e-1bb5b9aadc29}</Project>
+      <Name>NumLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
