@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Xml.Schema;
-using NumLibrary;
 using NUnit.Framework;
 
-namespace CheckPrime.UnitTest
+namespace NumLibrary.UnitTest
 {
     [TestFixture]
-    public class SolutionTests
+    public class IntExtensionTests
     {
         private IntExtension _solution;
 
@@ -42,4 +40,5 @@ namespace CheckPrime.UnitTest
             Assert.That(result,Is.EqualTo(expectedResult));
         }
     }
+
 }
