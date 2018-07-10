@@ -11,7 +11,10 @@ namespace CheckPrime
     {
         static void Main(string[] args)
         {
+            // Start
             Console.WriteLine("Welcome to using prime checker");
+            
+            // Check user's input endlessly until the user wants to end
             do
             {
                 int testNumber = GetUserInput();
@@ -20,6 +23,7 @@ namespace CheckPrime
 
             } while (DoesUserWantToContinue());
             
+            // End
             Console.WriteLine("Bye");
             Console.ReadKey();
         }

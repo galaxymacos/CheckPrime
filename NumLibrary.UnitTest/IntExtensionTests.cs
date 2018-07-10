@@ -6,12 +6,12 @@ namespace NumLibrary.UnitTest
     [TestFixture]
     public class IntExtensionTests
     {
-        private IntExtension _solution;
+        private IntExtension intExtension;
 
         [SetUp]
         public void SetUp()
         {
-            _solution = new IntExtension();            
+            intExtension = new IntExtension();            
         }
         
         [Test]
@@ -23,7 +23,7 @@ namespace NumLibrary.UnitTest
         [TestCase(6,false)]
         public void IsPrimeMap_whenCalled_ReturnIfItIsAPrime(int num,bool expectedResult)
         {
-            var result = _solution.IsPrimeMap(num);
+            var result = intExtension.IsPrimeMap(num);
             Assert.That(result,Is.EqualTo(expectedResult));
         }
         
@@ -36,7 +36,7 @@ namespace NumLibrary.UnitTest
         [TestCase(6,false)]
         public void IsPrime_whenCalled_ReturnIfItIsAPrime(int num,bool expectedResult)
         {
-            var result = _solution.IsPrime(num);
+            var result = intExtension.IsPrime(num);
             Assert.That(result,Is.EqualTo(expectedResult));
         }
     }
